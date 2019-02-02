@@ -79,7 +79,7 @@ let loadScript = () => {
 class FreshChat extends React.Component {
   constructor(props) {
     super(props)
-    
+
     let { token, ...moreProps } = props
 
     if (!token) {
@@ -87,7 +87,7 @@ class FreshChat extends React.Component {
     }
 
     this.init({
-      host: 'https://wchat.freshchat.com',
+      host,
       token,
       ...moreProps,
     })
